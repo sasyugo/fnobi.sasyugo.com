@@ -43,12 +43,3 @@ FlowTexts.prototype.renderWords = function () {
 	this.$element = $element;
 	return $element[0];
 };
-
-$(function () {
-	var $element = $('#flowtexts');
-	if (!$element[0]) {
-		return;
-	}
-
-	new FlowTexts($element[0]);
-});
